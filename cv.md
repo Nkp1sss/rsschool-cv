@@ -21,3 +21,36 @@ I am 19 years old. I am studying at the BNTU university. My core strengths are i
 - C#(basic), Python(basic)
 - Windows OS, Linux(Ubuntu 20.04.4 LTS)
 - Figma, Zeplin, Photoshop
+
+## Code example:
+```
+function round(n){
+    // ...
+    if (n - Math.floor(n) === 0.5 || n - Math.floor(n) === 0) return n;
+
+    /* если разница между числом и этим же числом, округленным в меньшую сторону больше чем 0.5, то
+       остаток этого числа лежит где-то в пределе: [0.50000000000001; 0.9999999999999999]
+    */ 
+    if (n - Math.floor(n) < 0.5) {
+        if (n - Math.floor(n) < 0.25) return Math.floor(n);
+        else return Math.floor(n) + 0.5;
+    }
+    else {
+        if (Math.ceil(n) - n > 0.25) return Math.ceil(n) - 0.5
+        else return Math.ceil(n);
+    }
+}
+```
+
+## Education:
+- Belarusian National Technical University, IT Software
+- Courses:
+  - [CS50](https://www.youtube.com/playlist?list=PLawfWYMUziZqyUL5QDLVbe3j5BKWj42E5)
+  - [HTML for beginners](https://ru.code-basics.com/languages/html)
+  - [CSS for beginners](https://ru.code-basics.com/languages/css)
+  - [JavaScript](https://learn.javascript.ru/)
+
+## Languages:
+- Russian - native speaker
+- English - A2+
+- German - A1
